@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Roboto";
+  background-color: #5cdb95;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}

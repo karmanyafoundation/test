@@ -1,0 +1,13 @@
+.section1 {
+  display: block;
+
+  width: 100vw;
+}
+@media only screen and (max-width: 1300px) {
+  .section1 {
+    display: block;
+
+    width: calc(100vw + 10px);
+    height: auto;
+  }
+}

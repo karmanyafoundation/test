@@ -1,0 +1,71 @@
+.customcard {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  font-family: "Playfair Display";
+  width: 400;
+  border-radius: 5px;
+  border: 0.25px solid gray;
+  height: 400px;
+
+  margin: 20px;
+}
+
+.customcard:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+  transition: all 0.25s ease-in-out;
+}
+
+.customcardrd:hover .title:after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  top: 70px;
+  left: 0;
+  border-bottom: 7px solid #eee;
+}
+
+.cardtitle {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.cardtitle span {
+  font-weight: bold;
+}
+.cardbody {
+  color: #a19e97;
+}
+
+.cardtitle:after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  top: 70px;
+  left: 0;
+  border-bottom: 7px solid gray;
+}
+@media only screen and (max-width: 1300px) {
+  .customcard {
+    width: 65vw;
+    height: 300px;
+  }
+}
+.image {
+  margin-top: 30px;
+}
+
+.content {
+  height: 400px;
+  margin-bottom: 20px;
+}
+.cardbody {
+  padding-top: 10px;
+  overflow: hidden;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 100;
+}

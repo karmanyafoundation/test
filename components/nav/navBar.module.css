@@ -1,0 +1,94 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  width: 90vw;
+  left: 50%;
+  top: 5px;
+  margin: 0 2%;
+  margin-top: 20px;
+  transform: translate(-50%);
+}
+.navbar a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  position: relative;
+}
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  border-bottom: 5px solid black;
+  transition: width 0.25s ease-in-out;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a:last-child {
+  margin-right: 0px;
+  text-decoration: none;
+}
+.nav {
+  padding: 0 10%;
+}
+.navcomp {
+  display: flex;
+  align-items: center;
+}
+.navcomp p {
+  margin-right: 30px;
+}
+.hamburger {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+.mobileparent {
+  position: absolute;
+  left: 50%;
+}
+
+.mobilenav li {
+  text-align: center;
+  list-style: none;
+  margin-top: 20%;
+}
+.mobilenav li a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+.mobilenav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  border-bottom: 5px solid black;
+  transition: width 0.25s ease-in-out;
+}
+.mobilenav a:hover::after {
+  width: 100%;
+}
+.mobilenav {
+  position: relative;
+  top: 15vh;
+  left: -50%;
+  z-index: 100;
+  font-family: "Roboto";
+  align-items: center;
+}
+@media only screen and (max-width: 1300px) {
+  .navcomp {
+    display: none;
+  }
+}

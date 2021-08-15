@@ -1,0 +1,67 @@
+.customcard {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  font-family: "Playfair Display";
+  background-color: #f3f2e7;
+  width: 25vw;
+  border-radius: 5px;
+
+  height: 250px;
+  margin: 100px 10%;
+  margin-right: 100px;
+}
+
+.customcard:hover {
+  cursor: pointer;
+  background-color: #867261;
+  transform: scale(1.055);
+  transition: all 0.25s ease-in-out;
+}
+
+.customcard:hover .title {
+  color: #f3f2e7;
+  cursor: pointer;
+}
+
+.customcard:hover .body {
+  color: #f3f2e7;
+}
+.ccustomcardrd:hover .title:after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  top: 70px;
+  left: 0;
+  border-bottom: 7px solid #eee;
+}
+
+.cardtitle {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  color: #867261;
+}
+.cardtitle span {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.cardbody {
+  color: #a19e97;
+}
+
+.cardtitle:after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  top: 70px;
+  left: 0;
+  border-bottom: 7px solid #6b523d;
+}
+@media only screen and (max-width: 1300px) {
+  .customcard {
+    width: 65vw;
+    height: 300px;
+  }
+}
